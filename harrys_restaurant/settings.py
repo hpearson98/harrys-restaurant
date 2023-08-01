@@ -34,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-hpearson98-harrysrestau-4154c4akoe3.ws-eu102.gitpod.io',
     'localhost',
-    'harrys-restaurant.herokuapp.com',
+    'harrys-restaurant-2775ba804436.herokuapp.com',
 ]
 
 
