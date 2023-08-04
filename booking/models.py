@@ -40,6 +40,7 @@ class Reservation(models.Model):
         null=True,
         blank=True
         )
+    
     first_name = models.CharField(
         max_length=50,
         null=False,
@@ -82,7 +83,10 @@ class Reservation(models.Model):
         ordering = ['date']
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"Booking: {self.id} - {self.first_name} {self.last_name}"
 
     def bookind_date_time(self):
         return f"You're booked in on {self.date} at {self.time}"
+
+    def booking_number(self):
+        return f"You're booking number is: {self.id}"
