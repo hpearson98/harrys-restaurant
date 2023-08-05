@@ -40,7 +40,7 @@ class Reservation(models.Model):
         null=True,
         blank=True
         )
-    
+
     first_name = models.CharField(
         max_length=50,
         null=False,
