@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+    <header>
+      <nav class="navbar navbar-expand-md bg-light">
         <div class="container-fluid">
           <a class="navbar-brand Logo" href="#">Harry's Restaurant</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,19 +24,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Bookings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#">Menu</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
+    </header>
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
