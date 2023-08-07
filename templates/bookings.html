@@ -2,13 +2,12 @@
 
 {% block content %}
 <h2>Your Bookings</h2>
-{% for reservation in reservation_list %}
 <div class="col">
     <div class="row">
-        <p>Booking number: {reservation.id}</p>
+        <p>Booking number:</p>
     </div>
     <div class="row">
-        Booking name: {reservation.first_name} {reservation.last_name}
+        Booking name: 
     </div>
 </div>
-{{% endfor %}}
+{% endblock %}
