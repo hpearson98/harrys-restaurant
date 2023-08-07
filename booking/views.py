@@ -13,3 +13,7 @@ class ReservationList(generic.ListView):
 
 class HomeView(TemplateView):
     template_name = "index.html"
+
+
+class MenuView(TemplateView):
+    template_name = "menu.html"
