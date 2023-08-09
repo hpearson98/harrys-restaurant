@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <h2>Your Bookings</h2>
 <div class="col">
     <div class="row">
@@ -10,4 +11,7 @@
         Booking name: 
     </div>
 </div>
+{% else %}
+
+{% endif %}
 {% endblock %}

@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    background-color: #383838;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+footer{
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.logo {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 .social-media-links li {
     list-style: none;
 }
 
 .social-media-links a{
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.social-media-links a:hover {
+    color: #e6930e
 }
