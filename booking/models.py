@@ -55,7 +55,6 @@ class Reservation(models.Model):
     )
     email = models.EmailField(default="email@hrestaurant.com")
     phone = models.CharField(
-        null=True,
         blank=True,
         unique=True,
         default="",
@@ -72,7 +71,6 @@ class Reservation(models.Model):
     time = models.CharField(
         max_length=10,
         choices=TIME_CHOICES,
-        default=timezone.now()
         )
     special_requests = models.CharField(
         max_length=250,
@@ -80,7 +78,7 @@ class Reservation(models.Model):
     )
 
     class Meta:
-        ordering = ['date']
+        ordering = ['-date']
 
     def __str__(self):
         return f"Booking: {self.id} - {self.first_name} {self.last_name}"

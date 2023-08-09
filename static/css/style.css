@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Roboto:wght@300;400;500&display=swap');
 
 body {
-    background-color: #383838;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
 footer{
     color: #ffffff;
+    background-color: #383838;
     padding-top: 20px;
+    width: 100%;
 }
 
 .logo {
