@@ -1,7 +1,13 @@
 from django.shortcuts import render
+
 from django.views import generic
-from .models import Reservation
 from django.views.generic import TemplateView
+
+from django.http import HttpResponseRedirect
+
+from .models import Reservation
+
+from .forms import ReservationForm
 
 
 # From 'View Creation Checklist' Code Institute video
@@ -17,3 +23,18 @@ class HomeView(TemplateView):
 
 class MenuView(TemplateView):
     template_name = "menu.html"
+
+
+def get_name(request):
+
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
+        """
+        if form.is_valid():
+            return HttpResponseRedirect('/confirmation/')
+        """
+    # if a GET method (or any other method), it will create a blank form
+    else:
+        form = ReservationForm()
+
+    return render(request, 'add_booking.html', {'form': form})
