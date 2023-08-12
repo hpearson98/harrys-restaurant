@@ -25,16 +25,20 @@ class MenuView(TemplateView):
     template_name = "menu.html"
 
 
-def get_name(request):
+class AddBookingView(TemplateView):
+    template_name = "add_booking.html"
+
+
+def post_reservation(request):
 
     if request.method == 'POST':
         form = ReservationForm(request.POST)
-        """
+
         if form.is_valid():
-            return HttpResponseRedirect('/confirmation/')
-        """
+            return HttpResponseRedirect('bookings')
+
     # if a GET method (or any other method), it will create a blank form
     else:
         form = ReservationForm()
 
-    return render(request, 'add_booking.html', {'form': form})
+    return render(request, 'add_booking.html', {'booking-form': form})

@@ -15,3 +15,6 @@ class ReservationForm(ModelForm):
             'time',
             'special_requests',
         ]
+
+
+form = ReservationForm()

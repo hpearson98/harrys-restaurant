@@ -1,17 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% if user.is_authenticated %}
+<a href="{% url 'add-booking' %}">Add Booking</a>
 <h2>Your Bookings</h2>
-<div class="col">
-    <div class="row">
-        <p>Booking number:</p>
-    </div>
-    <div class="row">
-        Booking name: 
+{% for booking in form %}
+<div class="row">
+    <div class="col">
+        <p class="booking-number">Booking number: { booking.id }</p>
+        <p class="booking-name">Booking name: { booking.first_name } { booking.last_name }</p>
+        <p class="booking-date">Booking date: { booking.date }</p>
+        <p class="booking-time">Booking time: { booking.time }</p>
     </div>
 </div>
-{% else %}
-
-{% endif %}
+{% endfor %}
 {% endblock %}
