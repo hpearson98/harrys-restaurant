@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from django.views import generic
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
 
 from django.http import HttpResponseRedirect
 
@@ -25,20 +25,13 @@ class MenuView(TemplateView):
     template_name = "menu.html"
 
 
-class AddBookingView(TemplateView):
+class AddBookingView(FormView):
     template_name = "add_booking.html"
+    form_class = ReservationForm
+    success_url = "bookings"
 
-
-def post_reservation(request):
-
-    if request.method == 'POST':
-        form = ReservationForm(request.POST)
-
-        if form.is_valid():
-            return HttpResponseRedirect('bookings')
-
-    # if a GET method (or any other method), it will create a blank form
-    else:
-        form = ReservationForm()
-
-    return render(request, 'add_booking.html', {'booking-form': form})
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.send_email()
+        return super().form_valid(form)
