@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Please fill in your details</h1>
-<form action="your-booking" method="POST">
+<h1 class="form-header">Please fill in your details</h1>
+<form action="bookings" method="POST">
     {% csrf_token %}
-    {{ form }}
+    {{ form.as_p }}
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-outline-success">Confirm</button>
+    </div>
 </form>
 {% endblock %}

@@ -5,29 +5,29 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 TIME_CHOICES = (
-    ('11:00:00', '11am'),
+    ('11:00:00', '11:00am'),
     ('11:30:00', '11:30am'),
-    ('12:00:00', '12pm'),
+    ('12:00:00', '12:00pm'),
     ('12:30:00', '12:30pm'),
-    ('13:00:00', '1pm'),
+    ('13:00:00', '1:00pm'),
     ('13:30:00', '1:30pm'),
-    ('14:00:00', '2pm'),
+    ('14:00:00', '2:00pm'),
     ('14:30:00', '2:30pm'),
-    ('15:00:00', '3pm'),
+    ('15:00:00', '3:00pm'),
     ('15:30:00', '3:30pm'),
-    ('16:00:00', '4pm'),
+    ('16:00:00', '4:00pm'),
     ('16:30:00', '4:30pm'),
-    ('17:00:00', '5pm'),
+    ('17:00:00', '5:00pm'),
     ('17:30:00', '5:30pm'),
-    ('18:00:00', '6pm'),
+    ('18:00:00', '6:00pm'),
     ('18:30:00', '6:30pm'),
-    ('19:00:00', '7pm'),
+    ('19:00:00', '7:00pm'),
     ('19:30:00', '7:30pm'),
-    ('20:00:00', '8pm'),
+    ('20:00:00', '8:00pm'),
     ('20:30:00', '8:30pm'),
-    ('21:00:00', '9pm'),
+    ('21:00:00', '9:00pm'),
     ('21:30:00', '9:30pm'),
-    ('22:00:00', '10pm'),
+    ('22:00:00', '10:00pm'),
 )
 
 
@@ -53,10 +53,9 @@ class Reservation(models.Model):
         blank=False,
         default=""
     )
-    email = models.EmailField(default="email@hrestaurant.com")
+    email = models.EmailField(default="")
     phone = models.CharField(
         blank=True,
-        unique=True,
         default="",
         max_length=15
     )
@@ -67,14 +66,16 @@ class Reservation(models.Model):
             MinValueValidator(1)
         ]
     )
-    date = models.DateField(default=timezone.now())
+    date = models.DateField(default="")
     time = models.CharField(
         max_length=10,
         choices=TIME_CHOICES,
         )
     special_requests = models.CharField(
         max_length=250,
-        default=""
+        default="",
+        null=True,
+        blank=True
     )
 
     class Meta:

@@ -1,3 +1,4 @@
+from django import forms
 from django.forms import ModelForm
 from booking.models import Reservation
 
@@ -15,6 +16,34 @@ class ReservationForm(ModelForm):
             'time',
             'special_requests',
         ]
+
+        widgets = {
+            'first_name': forms.TextInput(attrs={
+                'class': 'form-control'
+            }),
+            'last_name': forms.TextInput(attrs={
+                'class': 'form-control'
+            }),
+            'email': forms.TextInput(attrs={
+                'class': 'form-control'
+            }),
+            'phone': forms.TextInput(attrs={
+                'class': 'form-control'
+            }),
+            'number_of_people': forms.TextInput(attrs={
+                'class': 'form-control'
+            }),
+            'date': forms.DateInput(attrs={
+                'class': 'form-control',
+                'type': 'date'
+            }),
+            'time': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'special_requests': forms.Textarea(attrs={
+                'class': 'form-control'
+            }),
+        }
 
 
 form = ReservationForm()

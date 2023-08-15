@@ -31,3 +31,20 @@ footer{
 .social-media-links a:hover {
     color: #e6930e
 }
+
+/*----- Form CSS -----*/
+
+form {
+    margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        margin: 10px;
+    }
+}
+
+.form-header {
+    text-align: center;
+    margin-top: 20px;
+}
