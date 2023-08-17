@@ -1,17 +1,17 @@
 from django.shortcuts import render
 
-from django.views import generic
-from django.views.generic import TemplateView, FormView
+from django.views.generic import TemplateView, FormView, ListView
 
 from django.http import HttpResponseRedirect
 
 from .models import Reservation
 
 from .forms import ReservationForm
+from django.contrib.auth.decorators import login_required
+from allauth.account.views import LoginView
 
 
-# From 'View Creation Checklist' Code Institute video
-class ReservationList(generic.ListView):
+class ReservationList(ListView):
     model = Reservation
     queryset = Reservation.objects.order_by('date')
     template_name = 'bookings.html'
@@ -33,5 +33,4 @@ class AddBookingView(FormView):
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
         # It should return an HttpResponse.
-        form.send_email()
         return super().form_valid(form)

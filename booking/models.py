@@ -1,8 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractBaseUser
 from django.utils import timezone
 from django.core.validators import MaxValueValidator, MinValueValidator
-
 
 TIME_CHOICES = (
     ('11:00:00', '11:00am'),
@@ -35,12 +34,6 @@ class Reservation(models.Model):
     """
     Defines the fields for the reservation system in the database
     """
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE,
-        null=True,
-        blank=True
-        )
-
     first_name = models.CharField(
         max_length=50,
         null=False,

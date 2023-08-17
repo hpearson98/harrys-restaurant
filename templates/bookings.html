@@ -3,14 +3,15 @@
 {% block content %}
 <a href="{% url 'add-booking' %}">Add Booking</a>
 <h2>Your Bookings</h2>
-{% for booking in form %}
+{% for booking in object_list %}
 <div class="row">
     <div class="col">
-        <p class="booking-number">Booking number: { booking.id }</p>
-        <p class="booking-name">Booking name: { booking.first_name } { booking.last_name }</p>
-        <p class="booking-date">Booking date: { booking.date }</p>
-        <p class="booking-time">Booking time: { booking.time }</p>
+        <p class="booking-number">Booking number: {{ booking.id }}</p>
+        <p class="booking-name">Booking name: {{ booking.first_name }} {{ booking.last_name }}</p>
+        <p class="booking-date">Booking date: {{ booking.date }}</p>
+        <p class="booking-time">Booking time: {{ booking.time }}</p>
     </div>
 </div>
+<hr>
 {% endfor %}
 {% endblock %}
