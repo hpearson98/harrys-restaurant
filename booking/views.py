@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.views.generic import TemplateView, FormView, ListView
+from django.views.generic import TemplateView, FormView, ListView, DetailView
 
 from django.http import HttpResponseRedirect
 
@@ -15,6 +15,11 @@ class ReservationList(ListView):
     model = Reservation
     queryset = Reservation.objects.order_by('date')
     template_name = 'bookings.html'
+
+
+class ReservationDetailView(DetailView):
+    model = Reservation
+    template_name = 'booking_details.html'
 
 
 class HomeView(TemplateView):

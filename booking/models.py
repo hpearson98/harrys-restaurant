@@ -46,7 +46,9 @@ class Reservation(models.Model):
         blank=False,
         default=""
     )
-    email = models.EmailField(default="")
+    email = models.EmailField(
+        blank=False
+    )
     phone = models.CharField(
         blank=True,
         default="",

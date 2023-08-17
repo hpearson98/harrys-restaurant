@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p class="booking-number">Booking number: {{ reservation.id }}</p>
+        <p class="booking-name">Booking name: {{ reservation.first_name }} {{ reservation.last_name }}</p>
+        <p class="booking-date">Booking date: {{ reservation.date }}</p>
+        <p class="booking-time">Booking time: {{ reservation.time }}</p>
+    </div>
+</div>
+{% endblock %}
