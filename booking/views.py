@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.views.generic import TemplateView, FormView, ListView, DetailView
+from django.views.generic import TemplateView, CreateView, ListView, DetailView
 
 from django.http import HttpResponseRedirect
 
@@ -30,12 +30,8 @@ class MenuView(TemplateView):
     template_name = "menu.html"
 
 
-class AddBookingView(FormView):
+class AddBookingView(CreateView):
+    model = Reservation
     template_name = "add_booking.html"
-    form_class = ReservationForm
-    success_url = "bookings"
+    fields = '__all__'
 
-    def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
-        # It should return an HttpResponse.
-        return super().form_valid(form)

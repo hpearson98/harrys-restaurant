@@ -2,7 +2,7 @@
 
 {% block content %}
 <h1 class="form-header">Please fill in your details</h1>
-<form action="bookings" method="POST">
+<form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <div class="d-grid gap-2 col-6 mx-auto">

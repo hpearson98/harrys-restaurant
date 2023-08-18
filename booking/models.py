@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User, AbstractBaseUser
 from django.utils import timezone
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.urls import reverse
 
 TIME_CHOICES = (
     ('11:00:00', '11:00am'),
@@ -79,8 +80,5 @@ class Reservation(models.Model):
     def __str__(self):
         return f"Booking: {self.id} - {self.first_name} {self.last_name}"
 
-    def bookind_date_time(self):
-        return f"You're booked in on {self.date} at {self.time}"
-
-    def booking_number(self):
-        return f"You're booking number is: {self.id}"
+    def get_absolute_url(self):
+        return reverse('booking-details', args=(str(self.id)))
