@@ -7,7 +7,6 @@ from django.http import HttpResponseRedirect
 from .models import Reservation
 
 from .forms import ReservationForm
-from django.contrib.auth.decorators import login_required
 from allauth.account.views import LoginView
 
 
@@ -32,6 +31,6 @@ class MenuView(TemplateView):
 
 class AddBookingView(CreateView):
     model = Reservation
+    form_class = ReservationForm
     template_name = "add_booking.html"
-    fields = '__all__'
 
