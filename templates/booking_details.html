@@ -6,6 +6,8 @@
         <p class="booking-name">Booking name: {{ reservation.first_name }} {{ reservation.last_name }}</p>
         <p class="booking-date">Booking date: {{ reservation.date }}</p>
         <p class="booking-time">Booking time: {{ reservation.time }}</p>
+        <button class="btn"><a href="{% url 'edit-booking' reservation.pk %}">Edit</a></button>
+        <button class="btn"><a href="{% url 'delete-booking' reservation.pk %}">Cancel</a></button>
     </div>
 </div>
 {% endblock %}

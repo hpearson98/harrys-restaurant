@@ -11,6 +11,8 @@
         <p class="booking-date">Booking date: {{ booking.date }}</p>
         <p class="booking-time">Booking time: {{ booking.time }}</p>
     </div>
+    <button class="btn"><a href="{% url 'edit-booking' booking.pk %}">Edit</a></button>
+    <button class="btn"><a href="{% url 'delete-booking' booking.pk %}">Cancel</a></button>
 </div>
 <hr>
 {% endfor %}
