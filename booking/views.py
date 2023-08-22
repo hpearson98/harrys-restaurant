@@ -4,6 +4,7 @@ from django.views.generic import (
 )
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Reservation
 
@@ -11,10 +12,12 @@ from .forms import ReservationForm
 from allauth.account.views import LoginView
 
 
-class ReservationList(ListView):
+class ReservationList(LoginRequiredMixin, ListView):
     model = Reservation
     queryset = Reservation.objects.order_by('date')
     template_name = 'bookings.html'
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
 
 
 class ReservationDetailView(DetailView):
