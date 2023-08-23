@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import (
     TemplateView, CreateView, ListView, DetailView, UpdateView, DeleteView
 )
@@ -19,6 +19,9 @@ class ReservationList(LoginRequiredMixin, ListView):
     login_url = '/accounts/login/'
     redirect_field_name = 'account_login'
 
+    def get_queryset(self):
+        return Reservation.objects.filter(booking_creator=self.request.user)
+
 
 class ReservationDetailView(DetailView):
     model = Reservation
@@ -37,6 +40,10 @@ class AddBookingView(CreateView):
     model = Reservation
     form_class = ReservationForm
     template_name = "add_booking.html"
+
+    def form_valid(self, form):
+        form.instance.booking_creator = self.request.user
+        return super().form_valid(form)
 
 
 class EditBookingView(UpdateView):

@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.urls import reverse
 
@@ -34,6 +35,9 @@ class Reservation(models.Model):
     """
     Defines the fields for the reservation system in the database
     """
+    booking_creator = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="bookings"
+    )
     first_name = models.CharField(
         max_length=50,
         null=False,
@@ -80,4 +84,4 @@ class Reservation(models.Model):
         return f"Booking: {self.id} - {self.first_name} {self.last_name}"
 
     def get_absolute_url(self):
-        return reverse('booking-details', args=(str(self.id)))
+        return reverse('booking-details', args=[self.id])
