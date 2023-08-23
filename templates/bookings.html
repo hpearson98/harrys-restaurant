@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<a href="{% url 'add-booking' %}">Add Booking</a>
-<h2>Your Bookings</h2>
-{% for booking in object_list %}
-<div class="row">
-    <div class="col">
-        <p class="booking-number">Booking number: <a href="{% url 'booking-details' booking.pk %}">{{ booking.id }}</a></p>
-        <p class="booking-name">Booking name: {{ booking.first_name }} {{ booking.last_name }}</p>
-        <p class="booking-date">Booking date: {{ booking.date }}</p>
-        <p class="booking-time">Booking time: {{ booking.time }}</p>
+<div class="container">
+    <a href="{% url 'add-booking' %}">Add Booking</a>
+    <h2>Your Bookings</h2>
+    {% for booking in object_list %}
+    <div class="row">
+        <div class="col">
+            <p class="booking-number">Booking number: <a href="{% url 'booking-details' booking.pk %}">{{ booking.id }}</a></p>
+            <p class="booking-name">Booking name: {{ booking.first_name }} {{ booking.last_name }}</p>
+            <p class="booking-date">Booking date: {{ booking.date }}</p>
+            <p class="booking-time">Booking time: {{ booking.time }}</p>
+        </div>
+        <button class="btn"><a href="{% url 'edit-booking' booking.pk %}">Edit</a></button>
+        <button class="btn"><a href="{% url 'delete-booking' booking.pk %}">Cancel</a></button>
     </div>
-    <button class="btn"><a href="{% url 'edit-booking' booking.pk %}">Edit</a></button>
-    <button class="btn"><a href="{% url 'delete-booking' booking.pk %}">Cancel</a></button>
+    <hr>
+    {% endfor %}
 </div>
-<hr>
-{% endfor %}
 {% endblock %}

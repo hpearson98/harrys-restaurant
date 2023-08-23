@@ -3,8 +3,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    background-color: #3e3e3e;
-    color: #ffffff;
 }
 
 .logo {
@@ -15,6 +13,14 @@ body {
 
 .center {
     text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.align-right {
+    align-items: right;
 }
 
 /*----- Footer CSS -----*/
@@ -30,11 +36,50 @@ footer{
 .social-media-links a{
     text-decoration: none;
     font-size: 2rem;
-    color: #ffffff;
+    color: #000000
 }
 
 .social-media-links a:hover {
-    color: #fec300
+    color: #feb600
+}
+
+/*----- Home page CSS -----*/
+
+.home-header {
+    font-family: 'EB Garamond', serif;
+}
+
+.home-msg {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----- Bookings page CSS -----*/
+
+/*
+.add-booking-btn {
+    background-color: #050505;
+}
+
+.add-booking-btn > a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.add-booking-btn:hover {
+    background-color: #fec300;
+    color: white;
+}
+
+.add-booking-btn > a:hover {
+    color: white
+}
+*/
+
+.add-booking-btn > a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*----- Form CSS -----*/

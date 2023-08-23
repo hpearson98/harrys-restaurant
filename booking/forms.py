@@ -4,6 +4,12 @@ from booking.models import Reservation
 
 
 class ReservationForm(ModelForm):
+    """
+    This is the form class for my booking form.
+    It handles all of the fields that the form uses as well as
+    any attributes that have been applied to the form field such as
+    Bootstrap classes
+    """
     class Meta:
         model = Reservation
         fields = [
