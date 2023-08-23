@@ -23,9 +23,11 @@ class ReservationList(LoginRequiredMixin, ListView):
         return Reservation.objects.filter(booking_creator=self.request.user)
 
 
-class ReservationDetailView(DetailView):
+class ReservationDetailView(LoginRequiredMixin, DetailView):
     model = Reservation
     template_name = 'booking_details.html'
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
 
 
 class HomeView(TemplateView):
@@ -36,23 +38,29 @@ class MenuView(TemplateView):
     template_name = "menu.html"
 
 
-class AddBookingView(CreateView):
+class AddBookingView(LoginRequiredMixin, CreateView):
     model = Reservation
     form_class = ReservationForm
     template_name = "add_booking.html"
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
 
     def form_valid(self, form):
         form.instance.booking_creator = self.request.user
         return super().form_valid(form)
 
 
-class EditBookingView(UpdateView):
+class EditBookingView(LoginRequiredMixin, UpdateView):
     model = Reservation
     form_class = ReservationForm
     template_name = "edit_booking.html"
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
 
 
-class DeleteBookingView(DeleteView):
+class DeleteBookingView(LoginRequiredMixin, DeleteView):
     model = Reservation
     template_name = "delete_booking.html"
     success_url = reverse_lazy('bookings')
+    login_url = '/accounts/login/'
+    redirect_field_name = 'account_login'
