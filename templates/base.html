@@ -30,17 +30,17 @@
                 <a class="nav-link" href="{% url 'menu' %}">Menu</a>
               </li>
               {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                </li>
-                {% endif %}
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+              </li>
+              {% endif %}
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@
     <!-- Content Goes here -->
     {% endblock content %}
     <footer class="container">
-      <div class="row">
+      <div class="row g-0">
         <div class="col-md-4">
           <h3>Opening Times</h3>
           <p>Monday - Sunday: 11:00am - 11:00pm</p>
