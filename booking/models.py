@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.urls import reverse
 
+# These are the options for the times slots used in the model
 TIME_CHOICES = (
     ('11:00:00', '11:00am'),
     ('11:30:00', '11:30am'),
@@ -33,7 +34,9 @@ TIME_CHOICES = (
 
 class Reservation(models.Model):
     """
-    Defines the fields for the reservation system in the database
+    This is my model for the booking system.
+    It defines the fields to be used and the information that should be
+    in them.
     """
     booking_creator = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="bookings"

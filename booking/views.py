@@ -13,6 +13,12 @@ from allauth.account.views import LoginView
 
 
 class ReservationList(LoginRequiredMixin, ListView):
+    """
+    This is the view that displays the list of reservations
+    on the Bookings page.
+    It orders the bookings by date and and displays the bookings
+    created by the currently authenticated user.
+    """
     model = Reservation
     queryset = Reservation.objects.order_by('date')
     template_name = 'bookings.html'

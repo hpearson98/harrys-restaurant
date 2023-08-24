@@ -1,6 +1,8 @@
 from django import forms
 from django.forms import ModelForm
+from django.core.exceptions import ValidationError
 from booking.models import Reservation
+from django.utils import timezone
 
 
 class ReservationForm(ModelForm):
@@ -51,5 +53,9 @@ class ReservationForm(ModelForm):
             }),
         }
 
-
-form = ReservationForm()
+    def clean_date(self):
+        booking_date = self.cleaned_data['date']
+        if booking_date < timezone.now().date():
+            raise ValidationError("Date selected is before current date!")
+        
+        return booking_date
