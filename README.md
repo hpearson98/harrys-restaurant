@@ -14,6 +14,13 @@ To summarise, I found using the Agile Methodology of great benefit as it helped 
 
 ## User Experience
 
+### Strategy / Site Objectives
+Harry's Restaurant aims to create an inviting and welcoming impression that makes it easy for people and their families and friends to enjoy a quality meal together.
+
+It provides a simple way for people to book a table and organise a nice get-together for a special occasion.
+
+The target audience aimed towards people aged 18 years+, however anyone is welcome to Harry's Restaurant.
+
 ### Scope / User Stories
 
 * **First Time Visitor Goals**
