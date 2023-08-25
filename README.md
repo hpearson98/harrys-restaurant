@@ -38,3 +38,5 @@ The target audience aimed towards people aged 18 years+, however anyone is welco
     * As an authenticated user, I want to be able to make changes to my reservation such as the date or the time or number of people attending.
     * As an authenticated, user I want to be able to view all of the bookings that I have made to easily manage them
     * As an authenticated user, I would like to be able to cancel any bookings that I have made.
+
+### Structure / Designs Choices

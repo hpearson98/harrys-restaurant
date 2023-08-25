@@ -1,11 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="row mt-4 p-5 jtron rounded">
+    {% if user.is_authenticated %}
+    <h1 class="hero-title">Book yourself a table!</h1>
+
+    <p class="hero-text">
+        Sign up today to register yourself with us and get your place booked at one of the fastest 
+        growing restaurants in London. Seats are going quick so reserve your space now! Great food 
+        is only a few clicks away.
+    </p>
+       
+    <a href="{% url 'add-booking' %}">
+        <button class="btn btn-primary">Book table</button>
+    </a>    
+    {% else %}
+    <h1 class="hero-title">Sign up to book a table!</h1>
+
+    <p class="hero-text">
+        Thank you for registering yourself with us! Get your place booked at one of the fastest 
+        growing restaurants in London. Seats are going quick so reserve your space now! Great food 
+        is only a few clicks away.
+    </p>
+    <a href="{% url 'account_signup' %}">
+        <button class="btn btn-primary">Sign up</button>
+    </a> 
+    {% endif %}
+</div>
 <div class="container center">
-    <h1 class="home-header">Harry's Restaurant</h1>
+    <h1>Harry's Restaurant</h1>
+    
     <p class="home-msg">Harry’s Restaurant is a beautiful family run restaurant and beer garden 
         based in the heart of Mayfair, London. Serving some of the finest food in the area, 
         from classic British dishes to our chefs daily specials. We are here to make your 
         time with us the best it can be, so sit back, relax, eat, drink, smile and laugh</p>
+
+    <p class="home-msg"></p>
 </div>
 {% endblock %}

@@ -5,6 +5,10 @@ body {
     font-weight: 300;
 }
 
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+
 .logo {
     font-family: 'EB Garamond', serif;
     font-weight: 600;
@@ -45,8 +49,22 @@ footer{
 
 /*----- Home page CSS -----*/
 
-.home-header {
-    font-family: 'EB Garamond', serif;
+.jtron {
+    background: #000000;
+    color: #ffffff;
+    margin: 2rem;
+}
+
+.hero-img {
+    background: url(https://res.cloudinary.com/dilxh0pwa/image/upload/v1692987077/harrys-restaurant/media/hero-img_oyqhzj.jpg) no-repeat center center;
+}
+
+.hero-title {
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    margin-bottom: 3rem;
 }
 
 .home-msg {
