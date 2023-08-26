@@ -184,6 +184,25 @@ The form template is generated using [django-allauth](https://django-allauth.rea
 
 ## Technologies Used
 
+### Languages
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Libraries and Frameworks
+* [Django 3.2.20](https://docs.djangoproject.com/en/4.2/releases/3.2.20/) - Free and open source Python Web Framework
+* [Gunicorn 21.2.0](https://docs.gunicorn.org/en/stable/) - A Python WSGI HTTP server compatible with Django and used to run the project on Heroku
+* [PostregSQL 0.5.0](https://www.postgresql.org/) - A powerful, open-source object-relational database system
+* [Psycopg 2.9.6](https://www.psycopg.org/docs/) - A PostgreSQL database adapter for Python
+* [Cloudinary 1.33.0](https://cloudinary.com/) - A persistent file store for media
+* [Heroku](https://dashboard.heroku.com/) - A cloud platform used to deploy the project
+* [ElephantSQL](https://www.elephantsql.com/) - PostgreSQL database hosting service
+SQLite3 - The database provided by Django
+* [Django-allauth](https://django-allauth.readthedocs.io/en/latest/) - - Integrated set of Django applications used for authentication and registration
+* [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - A Framework for building responsive, mobile-fist sites
+
+
+
 ## Testing
 
 ## Deployment
