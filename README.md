@@ -305,6 +305,16 @@ SQLite3 - The database provided by Django
 * Logout Button
     * As expected, the user is successfully signed out when they click the sign out button.
 
+### Further Testing
+
+#### Google Chrome DevTools Lighthouse
+I run the project twice through Lighthouse in Google Chrome DevTools; once in mobile and the other in desktop. Below are the results.
+* Lighthouse - Mobile:
+![Image of Lighthouse results for mobile](readme_images/lighthouse_results_mobile.jpg)
+
+* Lighthouse - Desktop:
+![Image of Lighthouse results for desktop](readme_images/lighthouse_results_desktop.jpg)
+
 
 
 ## Deployment
