@@ -29,10 +29,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-hpearson98-harrysrestau-4154c4akoe3.ws-eu104.gitpod.io',
+    '8000-hpearson98-harrysrestau-g1nhyd0skqm.ws-eu104.gitpod.io',
     'localhost',
     'harrys-restaurant-2775ba804436.herokuapp.com',
 ]
