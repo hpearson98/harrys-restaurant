@@ -82,12 +82,28 @@ The primary background colour is White with black text for easy readablility. Th
 
 #### Typography
 
-
 The two fonts I used for this project were EB Garamond and Roboto. EB Garamond was used for the main headings of the site and Roboto was used for the main body of text. EB Garamond is a serif based font while Roboto is a sans-serif which enabled them to offer a good contrast and compliment eachother well while still being easily readable.
-EB Garamond serif
 
-Roboto sans-serif
+#### Icons
+
+Icons were used to display the social media icons in the footer as I found it an easy and intuitive was of displaying the links to the user. Aria-labels are used on the links to help assist screen readers.
+
 ## Feautures
+
+### Header & Navigation
+
+The header and navigation are displayed across all pages and includes a link on the Logo which brings the user to the home page. For medium screen sizes and below a hamburger button appears, which expands to show the navigation list with links to the Home, Bookings, Menu, Register and Login pages. This helps reduce the clutter on the header by keeping the page links neatly stowed away until the user clicks the hamburger button.
+
+Links to the Home, Bookings, Menu, Register and Login pages on desktop, are displayed openly across the header, which help the user to navigate easily from page to page, without having to revert back to the previous page via the back button. 
+
+When a user is authenticated the Register and Login links will be replaced with a Logout link.
+
+#### Footer
+
+The footer, which is displayed across all pages and is fully responsive, includes the opening times of the restaurant, links to social media pages, the address of the restaurant and other major contact details.
+
+The social media links utilize the hover CSS pseudo-class which gives a good visual indication to the user that they are hovering over a link.
+
 
 ### Existing Features
 
