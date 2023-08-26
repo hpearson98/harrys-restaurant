@@ -3,6 +3,8 @@ Harry's Restaurant is a full-stack, responsive website built for a fictional Res
 
 It allows the user to create an account so they can make a booking at table at the restaurant. Users can also browse the menu, letting them veiw the delicious dishes that are on offer.
 
+![Responsive Screenshots](readme_images/responsive_screenshots.png)
+
 ## Agile Methodology
 The plan for this project was carried out using Agile Methodology. GitHub Issues were used to record the User Stories. These were made up of all the key functionality that a user would expect from a Restaurant website.
 
@@ -100,19 +102,26 @@ Links to the Home, Bookings, Menu, Register and Login pages on desktop, are disp
 
 When a user is authenticated the Register and Login links will be replaced with a Logout link.
 
+![Screenshot of header](readme_images/header_screenshot.jpg)
+
 #### Footer
 
 The footer, which is displayed across all pages and is fully responsive, includes the opening times of the restaurant, links to social media pages, the address of the restaurant and other major contact details.
 
 The social media links utilize the hover CSS pseudo-class which gives a good visual indication to the user that they are hovering over a link.
 
+![Screenshot of footer](readme_images/footer_screenshot.jpg)
 #### Home Page Jumbotron
 
 The Home Page jumbotron is big and bold, enabling it to catch the users attention. This is a dynamic feature that will promt the user to sign up and register if they are not authenticated or alternatively, it will promt the user to make a booking if they are authenticated.
 
+![Screenshot of home page jumbotron](readme_images/jumbotron_screenshot.png)
+
 #### Home page content
 
 The rest of the content on the home page tells the user a little bit about the restaurant such as its origin story, what it values and the mission as a restaurant.
+
+![Screenshot of home page content](readme_images/homepage_content_screenshot.jpg)
 
 #### Bookings Page
 
@@ -122,11 +131,15 @@ Booking details are listed in date order and display all of the key details of t
 
 This page requires the user to be authenticated should they try and access the page via the URL directly.
 
+![Screenshot of Booking page](readme_images/bookingpage_screenshot.png)
+
 #### Booking Details Page
 
 The Booking Details page is a page that will display the booking details of a specific booking. It is access by clicking the booking number of a booking on the Bookings page.
 
 This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+![Screenshot of booking details](readme_images/booking_details_screenshot.png)
 
 #### Add Booking Page
 
@@ -134,11 +147,15 @@ This page generates a form based from the Reservation model that the user can fi
 
 This page requires the user to be authenticated should they try and access the page via the URL directly.
 
+![Screenshot of add booking form](readme_images/add_booking_screenshot.png)
+
 #### Edit Booking Page
 
 This page generates a form automatically filled with the details of the booking that is being edited. The form is based from the Reservation model and has all of the required field to input the data correctly
 
 This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+![Screenshot of edit booking form](readme_images/edit_booking_screenshot.png)
 
 #### Cancel Booking Page
 
@@ -146,9 +163,13 @@ If the user wish to cancel a booking, they are asked to confirm the cancelation.
 
 This page requires the user to be authenticated should they try and access the page via the URL directly.
 
+![Screenshot of cancel booking screen](readme_images/cancel_booking_screenshot.png)
+
 #### The Menu Page
 
 This page display all of the dishes the restaurant has to offer in a clear and easy to read format that makes it easy for the user to make their choice.
+
+![Screenshot of Menu Page](readme_images/menu_screenshot.png)
 
 #### Registration Page
 
@@ -162,6 +183,8 @@ The addition of the second password field ensures that the user does not make a 
 
 If the user already has an account, they can login in using the link that will take them to the login page
 
+![Screenshot of signup page](readme_images/signup_screenshot.png)
+
 #### Login Page
 
 This is the page that a user will come to if they wish to create an account. The form template is generated using [django-allauth](https://django-allauth.readthedocs.io/en/latest/) and it is comprised of the following fields:
@@ -170,11 +193,15 @@ This is the page that a user will come to if they wish to create an account. The
 
 If the user has not created an account they can sign up using the link that will take them to the registration page.
 
+![Screenshot of login page](readme_images/signin_screenshot.png)
+
 #### Logout page
 
 Users can easily logout via the logout page. Users are asked if they are sure they wish to logout and once confirmed, the user is logged out and directed to the home page.
 
 The form template is generated using [django-allauth](https://django-allauth.readthedocs.io/en/latest/).
+
+![Screenshot of logout page](readme_images/logout_screenshot.png)
 
 ### Future Features
 
