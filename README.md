@@ -434,8 +434,38 @@ web: gunicorn tailors_thimble.wsgi
 * ‘gunicorn’ is the server used.
 * ‘wsgi’, stands for web services gateway interface and is a standard that allows Python services to integrate with web servers.
 4. Save everything and push to GitHub.
+</details>
+
+<details>
+<summary>First Deployment</summary>
+
+### First Deployment
+
+1. Go back to the Heroku dashboard and click on the ‘Deploy’ tab.  
+2. For deployment method, select ‘GitHub’ and search for the project’s repository from the list. 
+3. Select and then click on ‘Deploy Branch’.  
+4. When the build log is complete it should say that the app has been successfully deployed.
+5. Click on the ‘Open App’ button to view it and the Django “The install worked successfully!” page, should be displayed. 
+
+</details>
+
+### Final Deployment
+
+1. When development is complete, if you had left `DEBUG = True` in the settings.py file, make sure to change it to `False`. You don't have to change anything if you had used `DEBUG = 'DEVELOPMENT' in os.environ` as your env.py file is ignored by GitHub. 
+2. Commit and push your code to your project's repository.
+3. Then open up Heroku, navigate to your project's app. Click on the 'settings' tab, open up the config vars and delete the DISABLE_COLLECTSTATIC variable. 
+4. Navigate to the 'Deploy' tab and scroll down to 'Deploy a GitHub branch'.
+5. Select the branch you want to deploy and click on the 'Deploy branch' button. When the app is deployed, you should see a message in the built log saying "Your app was successfully deployed".  Click 'View' to see the deployed app in the browser. Alternatively, you can click on the 'Open App' button at the top of the page. 
+
+</details>
 
 ### Forking the Github repository
+
+Forking allows you to view and edit the code without affecting the original repository
+
+1. Locate the GitHub repository. Link to this repository can be found [here](https://github.com/hpearson98/harrys-restaurant).
+2. Click on 'Fork', in the top right-hand corner.
+3. This will take you to your own repository to a fork with the same name as the original branch.
 
 ### Creating a local clone
 
