@@ -30,6 +30,10 @@ class ReservationList(LoginRequiredMixin, ListView):
 
 
 class ReservationDetailView(LoginRequiredMixin, DetailView):
+    """
+    This is the view for the booking_details.html template.
+    It simply renders the booking details of the selected booking.
+    """
     model = Reservation
     template_name = 'booking_details.html'
     login_url = '/accounts/login/'
@@ -37,14 +41,23 @@ class ReservationDetailView(LoginRequiredMixin, DetailView):
 
 
 class HomeView(TemplateView):
+    """
+    This is the view for the Home Page
+    """
     template_name = "index.html"
 
 
 class MenuView(TemplateView):
+    """
+    This is the view for the Menu Page
+    """
     template_name = "menu.html"
 
 
 class AddBookingView(LoginRequiredMixin, CreateView):
+    """
+    This is the View for the Add Booking Form
+    """
     model = Reservation
     form_class = ReservationForm
     template_name = "add_booking.html"
@@ -57,6 +70,9 @@ class AddBookingView(LoginRequiredMixin, CreateView):
 
 
 class EditBookingView(LoginRequiredMixin, UpdateView):
+    """
+    This is the view for the Edit booking form
+    """
     model = Reservation
     form_class = ReservationForm
     template_name = "edit_booking.html"
@@ -65,6 +81,9 @@ class EditBookingView(LoginRequiredMixin, UpdateView):
 
 
 class DeleteBookingView(LoginRequiredMixin, DeleteView):
+    """
+    This is the view for the delete_booking.html template
+    """
     model = Reservation
     template_name = "delete_booking.html"
     success_url = reverse_lazy('bookings')
