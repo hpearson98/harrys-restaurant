@@ -178,6 +178,10 @@ The form template is generated using [django-allauth](https://django-allauth.rea
 
 ### Future Features
 
+* I look to implement a Google Map API and assign it to the restaurants location so that users can see the location on a map.
+
+* I would like to notify the user when they login our logout with an alert so they are confirmed of the change in authentication.
+
 ## Technologies Used
 
 ## Testing
