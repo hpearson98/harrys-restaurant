@@ -63,7 +63,14 @@ One custom model has been implemented for this project: Reservation.
 
 ### Skeleton / Wireframes
 
+Using wireframes greatly aided the planning process and allowed me to have a clear direction I want the structure of the project to go. I only completed wireframes for the Home and Booking pages as these were the only pages, that I felt, that need attention to their structure. The other pages are very basic and did not need much planning if any at all.
+
 [Click here to view the home page wireframe](readme_images/harrys_restaurant_home_wf.pdf)
+
+[Click here to view the bookings page wireframe](readme_images/harrys_restaurant_bookings_wf.pdf)
+
+> [!NOTE]
+> Wireframes are not coming out quite as planned but the primary structure is still visible.
 
 ### Surface
 
