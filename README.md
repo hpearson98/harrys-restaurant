@@ -214,6 +214,53 @@ SQLite3 - The database provided by Django
 
 ## Testing
 
+### Header and Navbar
+* Logo link
+    * Link works as expected and takes the user back to the home page.
+* Booking page link
+    * For unauthenticated users the link works as expected and takes the user to the login page to prompt the user to login in because authenticaton is required to make a booking.
+    * For authenticated users the link works as expected and takes the user to the bookings page.
+* Menu page link
+    * The link to the menu page works as expected and takes the user to the menu page.
+* Sign up page link
+    * The link to the sign up page works as expected and takes the user to the sign up page.
+* Login page link
+    * The link to the login page works as expected and takes the user to the login page.
+* Logout page link
+    * The link to the logout page works as expected and takes the user to the logout page.
+
+### Footer
+* Facebook social media link
+    * Link works as expected and takes the user to www.facebook.com
+    * Color changes to orange when hovered over due to the css hover attribute, as expected.
+* Instagram social media link
+    * Link works as expected and takes the user to www.instagram.com
+    * Color changes to orange when hovered over due to the css hover attribute, as expected.
+* Youtube social media link
+    * Link works as expected and takes the user to www.youtube.com
+    * Color changes to orange when hovered over due to the css hover attribute, as expected.
+
+
+### Home Page
+* Sign up link in jumbotron (for unauthenticated users)
+    * Link works as expected and takes the user to the sign up page.
+* Sign up link in jumbotron (for authenticated users)
+    * Link works as expected and takes the user to the bookings page.
+
+### Bookings Page
+* Add booking button
+    * Button works as expected and takes the user to the Add Booking Form.
+* Booking number link
+    * The link works as expected and takes the user to the booking details page for the particular booking that has been selected.
+* Edit booking button
+    * Button works as expected and takes the user to the Edit Bookings Form for the particular bppking that has been selected.
+* Cancel bookings button
+    * Button works as expected and takes the user to the Cancel Bookings Page for the particular booking that has been selected.
+* Other tests
+    * Page successfully loads list of bookings that have been created by the authenticated user only.
+    * Page successfully displays the booking details for each booking.
+    
+
 ## Deployment
 
 ### Forking the Github repository

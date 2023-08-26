@@ -8,6 +8,9 @@
             <p class="booking-name">Booking name: {{ reservation.first_name }} {{ reservation.last_name }}</p>
             <p class="booking-date">Booking date: {{ reservation.date }}</p>
             <p class="booking-time">Booking time: {{ reservation.time }}</p>
+            <h3>Contact Refernces</h3>
+            <p class="booking-email">Appointed email: {{ reservation.email }}</p>
+            <p class="booking-phone">Appointed phone number: {{ reservation.phone }}</p>
             <p>
                 <a href="{% url 'edit-booking' reservation.pk %}">
                     <button class="btn btn-primary edit-booking-btn">Edit</button>
