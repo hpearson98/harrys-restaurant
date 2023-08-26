@@ -259,7 +259,53 @@ SQLite3 - The database provided by Django
 * Other tests
     * Page successfully loads list of bookings that have been created by the authenticated user only.
     * Page successfully displays the booking details for each booking.
-    
+
+### Add Booking Form
+* Form Validation
+    * Cannot submit form with empty first name field.
+    * Cannot submit form with empty last name name field.
+    * Cannot submit form with empty email field.
+    * Cannot submit form without entering a valid email address.
+    * Cannot submit form with empty date field.
+    * Cannot submit form with empty time field.
+    * Cannot submit form with the number of people field being less than 1.
+    * Cannot submit form with a date selected that is before the current date.
+    * Can submit form with an empty special requests field.
+
+### Edit Booking Form
+* Form Validation
+    * Cannot submit form with empty first name field.
+    * Cannot submit form with empty last name name field.
+    * Cannot submit form with empty email field.
+    * Cannot submit form without entering a valid email address.
+    * Cannot submit form with empty date field.
+    * Cannot submit form with empty time field.
+    * Cannot submit form with the number of people field being less than 1.
+    * Cannot submit form with a date selected that is before the current date.
+    * Can submit form with an empty special requests field.
+
+### Cancel Booking page
+* Confirm button
+    * Clicking the confirm button successfully deletes the selected booking.
+* Other tests
+    * Page successfully displays the booking details for the selected booking to the user.
+
+### Sign up Form
+* Form Validation
+    * Cannot create a user with a username already registered.
+    * Cannot create a user with an email address already registered.
+    * Can create a user without the email field populated, which is expected because it is optional.
+    * Cannot create a user without both password fields matching.
+
+### Login Form
+* Form Validation
+    * Cannot login with a registered and matching username and password.
+
+### Logout Page
+* Logout Button
+    * As expected, the user is successfully signed out when they click the sign out button.
+
+
 
 ## Deployment
 
