@@ -478,4 +478,25 @@ Forking allows you to view and edit the code without affecting the original repo
 
 ### Code
 
+The walkthrough projects listed below were used purely for inspiration. I used their ideas and methods and simply put them into the context of my own project.
+* Code Institute - I Think Therefore I Blog
+* [Codemy](https://www.youtube.com/@Codemycom) - Django Blog
+
+Documentation I often refered to:
+* [Django documentation](https://docs.djangoproject.com/en/3.2/)
+* [Bootstrap documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [Django-Allauth documentation](https://django-allauth.readthedocs.io/en/latest/)
+
+Other sources I found useful:
+* Using LoginRequiredMixin classes - [Django Documentation](https://docs.djangoproject.com/en/4.2/topics/auth/default/#django.contrib.auth.mixins.LoginRequiredMixin)
+* A student project that massively helped me with my read me file. I adapted their format and put it into the context of my project - [Tailor's Thimble by MoniPar](https://github.com/MoniPar/tailors_thimble/blob/main/README.md)
+* Using class-based views - [Django Documentation](https://docs.djangoproject.com/en/4.2/topics/class-based-views/generic-display/#making-friendly-template-contexts)
+* Ordering Models - [Django Documentation](https://docs.djangoproject.com/en/3.2/ref/models/options/#ordering)
+
+### Media
+I only used one image in my project. I sourced it from [Pexels](https://www.pexels.com/) and it was used as a background photo on the home page. The photographer is linked below:
+[Yente Van Eynde](https://www.pexels.com/@yente-van-eynde-1263034/)
+
 ## Acknowledgements
+* I would like to that my Mentor, Jack for their quality and continuous feedback.
+* I would like to thank Tutor Support for their amazing assistance.
