@@ -90,7 +90,9 @@ Icons were used to display the social media icons in the footer as I found it an
 
 ## Feautures
 
-### Header & Navigation
+### Existing Features
+
+#### Header & Navigation
 
 The header and navigation are displayed across all pages and includes a link on the Logo which brings the user to the home page. For medium screen sizes and below a hamburger button appears, which expands to show the navigation list with links to the Home, Bookings, Menu, Register and Login pages. This helps reduce the clutter on the header by keeping the page links neatly stowed away until the user clicks the hamburger button.
 
@@ -104,8 +106,75 @@ The footer, which is displayed across all pages and is fully responsive, include
 
 The social media links utilize the hover CSS pseudo-class which gives a good visual indication to the user that they are hovering over a link.
 
+#### Home Page Jumbotron
 
-### Existing Features
+The Home Page jumbotron is big and bold, enabling it to catch the users attention. This is a dynamic feature that will promt the user to sign up and register if they are not authenticated or alternatively, it will promt the user to make a booking if they are authenticated.
+
+#### Home page content
+
+The rest of the content on the home page tells the user a little bit about the restaurant such as its origin story, what it values and the mission as a restaurant.
+
+#### Bookings Page
+
+The Bookings page is a place where user can go to for anything related to the bookings. The can add, edit, cancel and view their current bookings.
+
+Booking details are listed in date order and display all of the key details of the bookings.
+
+This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+#### Booking Details Page
+
+The Booking Details page is a page that will display the booking details of a specific booking. It is access by clicking the booking number of a booking on the Bookings page.
+
+This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+#### Add Booking Page
+
+This page generates a form based from the Reservation model that the user can fill in to create a booking. The form is validated and the user cannot submit out the form if it is incomplete.
+
+This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+#### Edit Booking Page
+
+This page generates a form automatically filled with the details of the booking that is being edited. The form is based from the Reservation model and has all of the required field to input the data correctly
+
+This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+#### Cancel Booking Page
+
+If the user wish to cancel a booking, they are asked to confirm the cancelation. The page displays the booking details of the booking that the user wishes to cancel so they can be sure they are canceling the corrrect booking.
+
+This page requires the user to be authenticated should they try and access the page via the URL directly.
+
+#### The Menu Page
+
+This page display all of the dishes the restaurant has to offer in a clear and easy to read format that makes it easy for the user to make their choice.
+
+#### Registration Page
+
+This is the page that a user will come to if they wish to create an account. The form template is generated using [django-allauth](https://django-allauth.readthedocs.io/en/latest/) and it is comprised of the following fields:
+* Username
+* Email
+* Password
+* Password (again)
+
+The addition of the second password field ensures that the user does not make a mistake in setting up their account.
+
+If the user already has an account, they can login in using the link that will take them to the login page
+
+#### Login Page
+
+This is the page that a user will come to if they wish to create an account. The form template is generated using [django-allauth](https://django-allauth.readthedocs.io/en/latest/) and it is comprised of the following fields:
+* Username
+* Password
+
+If the user has not created an account they can sign up using the link that will take them to the registration page.
+
+#### Logout page
+
+Users can easily logout via the logout page. Users are asked if they are sure they wish to logout and once confirmed, the user is logged out and directed to the home page.
+
+The form template is generated using [django-allauth](https://django-allauth.readthedocs.io/en/latest/).
 
 ### Future Features
 
