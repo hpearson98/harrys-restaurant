@@ -2,7 +2,7 @@
 
 {% block content %}
 <h1 class="form-header">Cancel Bookings</h1>
-<div class="form-group">
+<div class="form-group center">
     <form method="POST">
         {% csrf_token %}
         <h3>Are you sure you want to cancel the following booking?</h3>
@@ -14,7 +14,7 @@
                 <p class="booking-time">Booking time: {{ reservation.time }}</p>
             </div>
         </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
+        <div class="d-grid gap-2 col-3 mx-auto">
             <button type="submit" class="btn btn-outline-success">Confirm</button>
         </div>
     </form>
