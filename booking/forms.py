@@ -57,5 +57,5 @@ class ReservationForm(ModelForm):
         booking_date = self.cleaned_data['date']
         if booking_date < timezone.now().date():
             raise ValidationError("Date selected is before current date!")
-            
+
         return booking_date
