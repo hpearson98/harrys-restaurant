@@ -5,7 +5,7 @@ body {
     font-weight: 300;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: 'EB Garamond', serif;
 }
 
@@ -56,7 +56,8 @@ footer{
 }
 
 .hero-img {
-    background: url(https://res.cloudinary.com/dilxh0pwa/image/upload/v1692987077/harrys-restaurant/media/hero-img_oyqhzj.jpg) no-repeat center center;
+    background: url(https://res.cloudinary.com/dilxh0pwa/image/upload/v1693035596/harrys-restaurant/media/harry_s-restaurant-heroimg_vakvb7.jpg) no-repeat;
+    padding: 2rem
 }
 
 .hero-title {
@@ -68,36 +69,25 @@ footer{
 }
 
 .home-msg {
-    max-width: 500px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*----- Bookings page CSS -----*/
 
-/*
+
+
 .add-booking-btn {
-    background-color: #050505;
+   margin: 1rem;
 }
 
-.add-booking-btn > a {
-    text-decoration: none;
-    color: #ffffff
+.edit-booking-btn {
+    margin: 2rem;
 }
 
-.add-booking-btn:hover {
-    background-color: #fec300;
-    color: white;
-}
-
-.add-booking-btn > a:hover {
-    color: white
-}
-*/
-
-.add-booking-btn > a {
-    text-decoration: none;
-    color: inherit;
+.cancel-booking-btn {
+    margin: 2rem;
 }
 
 /*----- Form CSS -----*/

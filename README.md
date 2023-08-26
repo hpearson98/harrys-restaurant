@@ -40,3 +40,29 @@ The target audience aimed towards people aged 18 years+, however anyone is welco
     * As an authenticated user, I would like to be able to cancel any bookings that I have made.
 
 ### Structure / Designs Choices
+
+### Skeleton / Wireframes
+
+### Surface
+
+## Feautures
+
+### Existing Features
+
+### Future Features
+
+## Technologies Used
+
+## Testing
+
+## Deployment
+
+### Forking the Github repository
+
+### Creating a local clone
+
+## Credits
+
+### Code
+
+## Acknowledgements

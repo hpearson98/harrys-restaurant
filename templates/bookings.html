@@ -2,7 +2,9 @@
 
 {% block content %}
 <div class="container">
-    <a href="{% url 'add-booking' %}">Add Booking</a>
+    <a href="{% url 'add-booking' %}">
+        <button class="btn btn-success add-booking-btn">Add Booking</button>
+    </a>
     <h2>Your Bookings</h2>
     {% for booking in object_list %}
     <div class="row">
@@ -12,8 +14,12 @@
             <p class="booking-date">Booking date: {{ booking.date }}</p>
             <p class="booking-time">Booking time: {{ booking.time }}</p>
         </div>
-        <button class="btn"><a href="{% url 'edit-booking' booking.pk %}">Edit</a></button>
-        <button class="btn"><a href="{% url 'delete-booking' booking.pk %}">Cancel</a></button>
+        <a href="{% url 'edit-booking' booking.pk %}">
+            <button class="btn btn-primary edit-booking-btn">Edit</button>
+        </a>
+        <a href="{% url 'delete-booking' booking.pk %}">
+            <button class="btn btn-danger cancel-booking-btn">Cancel</button>
+        </a>
     </div>
     <hr>
     {% endfor %}
