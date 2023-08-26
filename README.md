@@ -201,7 +201,16 @@ SQLite3 - The database provided by Django
 * [Django-allauth](https://django-allauth.readthedocs.io/en/latest/) - - Integrated set of Django applications used for authentication and registration
 * [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - A Framework for building responsive, mobile-fist sites
 
-
+### Tools
+* [Gitpod](https://www.gitpod.io/) - Used as a cloud based IDE
+* [Github](https://github.com/) - Used as an Agile development tool and version control
+* [Git](https://git-scm.com/) - Git was used for version control by using the Gitpod terminal to regularly commit to Git and push to Github.
+* [W3S Markup Validator](https://validator.w3.org/#validate_by_input) - The W3S Markup Validator was used to ensure the HTML code was free of any syntax errors.
+* [W3S CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - The W3S CSS Validator was used to ensure the CSS code was free of any syntax errors.
+* [Figma](https://www.figma.com/) - Figma was used in the design process to create wireframes for the project. This made it easy to visualize the layout of the website.
+* [Lucidchart](https://lucid.app/) - Lucidchart was used to create the Entity Relationship Diagram.
+* [Google Fonts](https://fonts.google.com/) - Google fonts was used to to import the EB Garamond and Roboto fonts used throughout the website.
+* [Hover.css](https://ianlunn.github.io/Hover/) - Hover.css was used on the social meadia icons in the  footer. 
 
 ## Testing
 
