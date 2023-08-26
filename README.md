@@ -74,6 +74,19 @@ Using wireframes greatly aided the planning process and allowed me to have a cle
 
 ### Surface
 
+#### Colour Scheme
+
+The colour scheme that I used was very monochromatic, with splashes of colour for items of interest such as buttons or links.
+
+The primary background colour is White with black text for easy readablility. The jumbotron used on the home page is a contrast to this colour scheme, which has a black background and white text, to indicate the start and end of a new section.
+
+#### Typography
+
+
+The two fonts I used for this project were EB Garamond and Roboto. EB Garamond was used for the main headings of the site and Roboto was used for the main body of text. EB Garamond is a serif based font while Roboto is a sans-serif which enabled them to offer a good contrast and compliment eachother well while still being easily readable.
+EB Garamond serif
+
+Roboto sans-serif
 ## Feautures
 
 ### Existing Features
