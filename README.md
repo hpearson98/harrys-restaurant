@@ -41,7 +41,29 @@ The target audience aimed towards people aged 18 years+, however anyone is welco
 
 ### Structure / Designs Choices
 
+The website is simple to use and consistent within its structure. The website was designed to be responsive on screens from 375px and above, making it great ti use from mobile to desktop.
+
+For desktop users the navigation bar shows the 'Harry's Restaurant' logo and links to pages for 'Home', 'Bookings', 'Menu' and 'Logout' (for authenticated users) or 'Sign up' and 'Login' pages (for unauthenticated users). For users on a screen size of 767px or below the navigation bar will collapse down and be accessible via a burger button to save screen space and a more polished appearance. The navigation bar is repeated across all pages on the site, allowing for easy navigation.
+
+The Footer displays social media links which open in a separate tab for ease of use. It also displays the restaurants's address, the opening hours and other contact details. The footer is also repeated across all pages to keep the design uniform and for ease of access.
+
+The Home Page clearly indicates the purpose of the site with a jumbotron which will urge users to sign up (for unauthenticated users) or book a table (for authenticated users). Below is a description of the restaurant which describes the style of cuisine on offer and an 'Our Story' section, which gives insight to the orgins of the restaurant and its mission.
+
+The Bookings page allow users to easily see all of there bookings that have been made and clearly display the details of the booking. Users can also edit and cancel any of their bookings as well as add a new booking from this page. Users can also click the booking number of any booking to see the details of that particular booking.
+
+The Menu page clearly shows the user what food the restaurant has on offer. the dishes are broken down in categories of Starters, Mains and Deserts.
+
+The Sign up / Login pages are clear and and display the fields in a familiar format to the user.
+
+#### Database Schema
+
+One custom model has been implemented for this project: Reservation.
+
+![This is an image of my Entity Relatated Diagram](readme_images/harrys_restaurant_erd.jpeg)
+
 ### Skeleton / Wireframes
+
+[Click here to view the home page wireframe](readme_images/harrys_restaurant_home_wf.pdf)
 
 ### Surface
 
