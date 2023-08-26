@@ -319,6 +319,32 @@ I run the project twice through Lighthouse in Google Chrome DevTools; once in mo
 * The website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safar browsers.
 * The website has been tested on multiple devices with various viewport widths including a desktop, a laptop and an iPhone 14.
 
+## Bugs
+
+<details>
+<summary>First Deployement Bug</summary>
+
+During my first deployment my project deployed from Heroku unsuccessfully. I found that I made a typo in the `DISABLE_COLLECTSTATIC` config var.
+
+I solved this by correcting the typo and corrently deploying the project.
+</details>
+
+<details>
+<summary>Bookings List Bug</summary>
+
+I had an issue where an authenticated user would see all of the booking every created and not just the ones created by them. I looked up various pieces of django documentation, icluding topics on the `get_queryset()` method and ListViews.
+
+I solved the issue by adding the follow method to the ReservationListView.
+```
+def get_queryset(self):
+        return Reservation.objects.filter(booking_creator=self.request.user)
+```
+## Remainging Bugs
+<details>
+<summary>Phone Field Validation</summary>
+
+The phone field currently accepts letters.
+</details>
 ## Deployment
 
 For good practice, this project was deployed early to Heroku in order to save time and avoid inconveniences later on.
