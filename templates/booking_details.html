@@ -2,13 +2,22 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col center">
+            <h1>Booking Details</h1>
             <p class="booking-number">Booking number: {{ reservation.id }}</p>
             <p class="booking-name">Booking name: {{ reservation.first_name }} {{ reservation.last_name }}</p>
             <p class="booking-date">Booking date: {{ reservation.date }}</p>
             <p class="booking-time">Booking time: {{ reservation.time }}</p>
-            <button class="btn"><a href="{% url 'edit-booking' reservation.pk %}">Edit</a></button>
-            <button class="btn"><a href="{% url 'delete-booking' reservation.pk %}">Cancel</a></button>
+            <p>
+                <a href="{% url 'edit-booking' reservation.pk %}">
+                    <button class="btn btn-primary edit-booking-btn">Edit</button>
+                </a>
+            </p>
+            <p>    
+                <a href="{% url 'delete-booking' reservation.pk %}">
+                    <button class="btn btn-danger cancel-booking-btn">Cancel</button>
+                </a>
+            </p>    
         </div>
     </div>
 </div>
