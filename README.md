@@ -469,6 +469,11 @@ Forking allows you to view and edit the code without affecting the original repo
 
 ### Creating a local clone
 
+1. Go to the GitHub repository. Link to this repository can be found [here](https://github.com/hpearson98/harrys-restaurant).
+2. Click on 'Code' to the right of the screen. This will open a dropdown. Click on HTTPs and copy the link.
+3. Open Git Bash in your IDE and change the current working directory to the location where you want the cloned directory.
+4. Type `git clone`, paste the URL you copied earlier, and press Enter to create your local clone.
+
 ## Credits
 
 ### Code
